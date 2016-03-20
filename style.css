@@ -1,0 +1,53 @@
+body {
+    background-color: #f0f0f2;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 10px auto;
+}
+
+#feedback {
+    height: 120px;
+}
+
+#feedback .heart-info-wrapper {
+    margin: 25px auto;
+    width: 100%;
+    height: 100%;
+}
+
+#feedback h1 {
+    width: 60%;
+    text-align:right;
+}
+
+#heart-icon {
+    position: relative;
+    top: -10px;
+    left: 10px;
+    width: 40%;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#heart {
+    width: 100%;
+    height: 300px;
+    font-size:3em;
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .wrapper {
+        width: 480px;
+        margin: 50px auto;
+        transition: margin 1s;
+    }
+}
