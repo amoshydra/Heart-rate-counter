@@ -58,11 +58,11 @@ $(document).ready(function (){
 				.animate({height: 13,width: 13}, animationSpeed)
 				.animate({height: 10,width: 10}, animationSpeed)
 				.animate({height: 10,width: 10}, animationSpeed*12, function (){
-					
+
 					if (currentID == animationID) {
-						animateHeartBeat();	
+						animateHeartBeat();
 					}
-				});	
+				});
 		}
 	}
 
@@ -71,11 +71,4 @@ $(document).ready(function (){
 	function writeToFeedback(message) {
 		feedbackHeader[0].innerHTML = message;
 	}
-
-	function shareToWhatsapp() {
-		var message = "My heart rate is " + heartRate + " beat per minute."
-		var urlToOpen = "whatsapp://send?text=" + message;
-		window.open( urlToOpen, "_self");
-	}
 });
-
